@@ -4,12 +4,16 @@ import { Switch, Route, Link } from 'react-router-dom';
 import './App.css';
 import axios from 'axios';
 import Home  from './Component/Home';
+import BlogList from './Component/BlogList';
+
 
 
 const Main = () => (
   <main>
     <Switch>
       <Route exact path='/' component={Home} />
+      <Route exact paTH='/blog' component={BlogList}/>
+
     </Switch>
   </main>
 )
@@ -31,7 +35,7 @@ const Menu = () => (
             <Link to='/' className='nav-link'>Home</Link>
           </li>
           <li className="nav-item mr-3">
-            <a className="nav-link" href="#">resume</a>
+            <Link to='/blog' className='nav-link'>Blog</Link>
           </li>
           <li className="nav-item mr-3">
             <a className="nav-link" href="#">blog</a>
