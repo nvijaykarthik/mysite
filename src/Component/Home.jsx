@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import springICO from '../icon-spring-framework.svg';
 
 class Home extends Component {
     render() {
@@ -12,7 +13,7 @@ class Home extends Component {
                             </div>
                             <div className="col-md-9">
                                 <h1>VijayKarthik Nagarajan</h1>
-                                <h4><i>Full Stack/Polyglot: Architect</i></h4>
+                                <h4><i>Full Stack/Polyglot: Engineer (Development,Archietct)</i></h4>
                             </div>`
                     </div>
                     </div>
@@ -21,7 +22,7 @@ class Home extends Component {
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 text-center text-md-left mb-3 mb-md-0 text-white">
-                                <span class=" ">?</span>
+                                <span class=" "></span>
                             </div>
                         </div>
                     </div>
@@ -30,22 +31,22 @@ class Home extends Component {
                     <div class="container">
                         <header class="text-center w-md-50 mx-auto mb-8">
                             <h2 class="h1">Skills</h2>
-                            <p class="h5">Stream creative technology company providing key digital services for everyone.</p>
+                            <p class="h5">Providing solutions on the key technologies, for faster time to market</p>
                         </header>
                         <div class="row">
                             <div class="col-lg-4 mb-5 mb-lg-0">
                                 <div class="display-4 text-primary mb-2">
-                                    <i class="fab fa-grav"></i>
+                                    <i class="fas fa-dice-d20"></i>
                                 </div>
-                                <h4 class="h5">Excellent Features</h4>
+                                <h4 class="h5">Microservices</h4>
                                 <p>Achieve virtually any look and layout design within one UI Kit solution.</p>
                             </div>
 
                             <div class="col-lg-4 mb-5 mb-lg-0">
                                 <div class="display-4 text-primary mb-2">
-                                    <i class="fab fa-connectdevelop"></i>
+                                    <i class="fas fa-braille"></i>
                                 </div>
-                                <h4 class="h5">Powerful API</h4>
+                                <h4 class="h5">Firestrap Framework</h4>
                                 <p>We strive to figure out ways to help your audience grow through all platforms.</p>
                             </div>
 
@@ -53,7 +54,7 @@ class Home extends Component {
                                 <div class="display-4 text-primary mb-2">
                                     <i class="fas fa-cubes"></i>
                                 </div>
-                                <h4 class="h5">Blockchain Based</h4>
+                                <h4 class="h5">Blockchain Technologies</h4>
                                 <p>Find what you need in one template and combine features at will.</p>
                             </div>
                         </div>
@@ -62,25 +63,25 @@ class Home extends Component {
                         <div class="row">
                             <div class="col-lg-4 mb-5 mb-lg-0">
                                 <div class="display-4 text-primary mb-2">
-                                    <i class="fab fa-vuejs"></i>
+                                    <img class="sidebyside" width="60" id="spring-framework-icon" src={springICO}></img>
                                 </div>
-                                <h4 class="h5">VueJS Included</h4>
+                                <h4 class="h5">Spring Boot / Cloud</h4>
                                 <p>Easy and fast adjustments of elements are possible with Stream UI Kit.</p>
                             </div>
 
                             <div class="col-lg-4 mb-5 mb-lg-0">
                                 <div class="display-4 text-primary mb-2">
-                                    <i class="fab fa-react"></i>
+                                    <i class="fas fa-box"></i>
                                 </div>
-                                <h4 class="h5">React Powered</h4>
+                                <h4 class="h5">Containerization</h4>
                                 <p>Our React Powered App will save you tons of time and cost in your projects.</p>
                             </div>
 
                             <div class="col-lg-4 mb-5 mb-lg-0">
                                 <div class="display-4 text-primary mb-2">
-                                    <i class="fab fa-angular"></i>
+                                    <i class="fas fa-circle-notch"></i>
                                 </div>
-                                <h4 class="h5">Angular Compatible</h4>
+                                <h4 class="h5">Agile</h4>
                                 <p>Power your app with Angular components for no cost within one stop solution.</p>
                             </div>
                         </div>
@@ -91,7 +92,7 @@ class Home extends Component {
                     <div class="container">
                         <header class="text-center w-md-50 mx-auto mb-8">
                             <h2 class="h1">Opensource Contribution</h2>
-                            <p class="h5">Your business needs a little push. We strive to figure out ways to help your audience grow.</p>
+                            <p class="h5">Few notable contributions on the Opensource</p>
                         </header>
 
                         <div class="row">
@@ -99,8 +100,8 @@ class Home extends Component {
                                 <div class="card u-box-shadow-lg ">
                                     <img class="card-img-top" src="https://jsblight.com/cdwd/wp-content/uploads/2015/01/About-1-400x550.jpg" alt="Card image cap"></img>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h5 class="card-title"><a target="_blank" href="https://github.com/nvijaykarthik/Spring-boot-microservice-Reference-Implementaion-setup-framework">Microservice Reference Impl</a></h5>
+                                        <p class="card-text">Initial Basic reference implementation of the Microserivce using springboot .</p>
                                         <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
                                 </div>
@@ -109,7 +110,17 @@ class Home extends Component {
                                 <div class="card u-box-shadow-lg ">
                                     <img class="card-img-top" src="https://jsblight.com/cdwd/wp-content/uploads/2015/01/About-1-400x550.jpg" alt="Card image cap"></img>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
+                                        <h5 class="card-title"><a target="_blank" href="https://github.com/nvijaykarthik/pinakee">Pinakee</a>   </h5>
+                                        <p class="card-text">Pinakee is a Microserivce based API for XML transformation from one format to another using Xquery</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 mb-5">
+                                <div class="card u-box-shadow-lg">
+                                    <img class="card-img-top" src="https://jsblight.com/cdwd/wp-content/uploads/2015/01/About-1-400x550.jpg" alt="Card image cap"></img>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a target="_blank" href="https://github.com/nvijaykarthik/firestrap">Firestrap</a></h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         <a href="#" class="btn btn-primary">Go somewhere</a>
                                     </div>
@@ -119,19 +130,9 @@ class Home extends Component {
                                 <div class="card u-box-shadow-lg">
                                     <img class="card-img-top" src="https://jsblight.com/cdwd/wp-content/uploads/2015/01/About-1-400x550.jpg" alt="Card image cap"></img>
                                     <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                                <div class="card u-box-shadow-lg">
-                                    <img class="card-img-top" src="https://jsblight.com/cdwd/wp-content/uploads/2015/01/About-1-400x550.jpg" alt="Card image cap"></img>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <h5 class="card-title"><a target="_blank" href="https://github.com/nvijaykarthik/block-chain-electronic-voting-reference-implementation-using-javascript">Blector</a></h5>
+                                        <p class="card-text">Electronic Voting using block chain (reference Implementation) in Javascript</p>
+                                        <a target="_blank" href="https://github.com/nvijaykarthik/block-chain-electronic-voting-reference-implementation-using-javascript" class="btn btn-primary">Go somewhere</a>
                                     </div>
                                 </div>
                             </div>

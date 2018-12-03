@@ -5,15 +5,16 @@ import './App.css';
 import axios from 'axios';
 import Home  from './Component/Home';
 import BlogList from './Component/BlogList';
+import BlogPage from './Component/BlogPage';
 
-
+// <Route exact path='/blog/:name' render={(props) => <BlogPage globalStore={globalStore} {...props} /> } />
 
 const Main = () => (
   <main>
     <Switch>
-      <Route exact path='/' component={Home} />
-      <Route exact paTH='/blog' component={BlogList}/>
-
+      <Route exact path='/' component={BlogList} />
+      <Route exact path='/about' component={Home}/>
+      <Route exact path='/blog/:blg/:folder/:name' component={BlogPage}/>
     </Switch>
   </main>
 )
@@ -23,7 +24,7 @@ const Menu = () => (
     <div className="container">
       <a className="navbar-brand" href="index.html">
         Vijaykarthik n
-    </a>
+      </a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
         aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -35,13 +36,7 @@ const Menu = () => (
             <Link to='/' className='nav-link'>Home</Link>
           </li>
           <li className="nav-item mr-3">
-            <Link to='/blog' className='nav-link'>Blog</Link>
-          </li>
-          <li className="nav-item mr-3">
-            <a className="nav-link" href="#">blog</a>
-          </li>
-          <li className="nav-item mr-3">
-            <a className="nav-link" href="#">Contacts</a>
+            <Link to='/about' className='nav-link'>About Me</Link>
           </li>
         </ul>
       </div>
