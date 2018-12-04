@@ -32,7 +32,6 @@ class BlogPage extends Component {
     }
 
     getContent = (pageName) => {
-        let self = this;
         let url = pageURL.concat(pageName);
         let header = { 'content-type': 'application/vnd.github.VERSION.raw' }
         axios.get(url,

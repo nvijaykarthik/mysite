@@ -1,7 +1,18 @@
 import React, { Component } from 'react';
 import springICO from '../icon-spring-framework.svg';
+import microservice from '../img/microservice.png';
+import pinakee from '../img/pinakee.png';
+import blector from '../img/blector.png';
+import firestrap from '../img/wip.png';
 
+const opnSrcIcoStl={
+    height:'300px'
+    };
+const opnSrcBodyHeight={
+    height:'200px'
+    };
 class Home extends Component {
+    
     render() {
         return (
             <div>
@@ -14,7 +25,11 @@ class Home extends Component {
                             <div className="col-md-9">
                                 <h1>VijayKarthik Nagarajan</h1>
                                 <h4><i>Full Stack/Polyglot: Engineer (Development,Archietct)</i></h4>
-                            </div>`
+                                13+ years of industrial experience and still going on.<br/>
+                                Experience on Microservice, Docket, PCF, heroku. <br/>
+                                Interested in block chain technology and contribution to public via blog or opensource solution.<br/>
+                                Working on Messaging system using spring integration.
+                            </div>
                     </div>
                     </div>
                 </section>
@@ -63,7 +78,7 @@ class Home extends Component {
                         <div class="row">
                             <div class="col-lg-4 mb-5 mb-lg-0">
                                 <div class="display-4 text-primary mb-2">
-                                    <img class="sidebyside" width="60" id="spring-framework-icon" src={springICO}></img>
+                                    <img class="sidebyside" width="60" id="spring-framework-icon" src={springICO} alt="spring boot framework icon"></img>
                                 </div>
                                 <h4 class="h5">Spring Boot / Cloud</h4>
                                 <p>Easy and fast adjustments of elements are possible with Stream UI Kit.</p>
@@ -97,58 +112,67 @@ class Home extends Component {
 
                         <div class="row">
                             <div class="col-lg-3 col-sm-6 mb-5">
-                                <div class="card u-box-shadow-lg ">
-                                    <img class="card-img-top" src="https://jsblight.com/cdwd/wp-content/uploads/2015/01/About-1-400x550.jpg" alt="Card image cap"></img>
-                                    <div class="card-body">
-                                        <h5 class="card-title"><a target="_blank" href="https://github.com/nvijaykarthik/Spring-boot-microservice-Reference-Implementaion-setup-framework">Microservice Reference Impl</a></h5>
-                                        <p class="card-text">Initial Basic reference implementation of the Microserivce using springboot .</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <div class="card u-box-shadow-lg">
+                                    <div style={opnSrcIcoStl}>
+                                    <img class="card-img-top" src={microservice} alt="Microservice" width="400" height="300"></img>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-6 mb-5">
-                                <div class="card u-box-shadow-lg ">
-                                    <img class="card-img-top" src="https://jsblight.com/cdwd/wp-content/uploads/2015/01/About-1-400x550.jpg" alt="Card image cap"></img>
-                                    <div class="card-body">
-                                        <h5 class="card-title"><a target="_blank" href="https://github.com/nvijaykarthik/pinakee">Pinakee</a>   </h5>
-                                        <p class="card-text">Pinakee is a Microserivce based API for XML transformation from one format to another using Xquery</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    <div class="card-body" style={opnSrcBodyHeight}>
+                                        <h5 class="card-title"><a target="_blank" rel="noopener noreferrer" href="https://github.com/nvijaykarthik/Spring-boot-microservice-Reference-Implementaion-setup-framework">Microservice Reference Impl</a></h5>
+                                        <p class="card-text">Reference implementation of the Microserivce using springboot.</p>
+                                        
+                                    </div>
+                                    <div class="card-footer">
+                                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/nvijaykarthik/Spring-boot-microservice-Reference-Implementaion-setup-framework" class="btn btn-primary float-right">View Details</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6 mb-5">
                                 <div class="card u-box-shadow-lg">
-                                    <img class="card-img-top" src="https://jsblight.com/cdwd/wp-content/uploads/2015/01/About-1-400x550.jpg" alt="Card image cap"></img>
-                                    <div class="card-body">
-                                        <h5 class="card-title"><a target="_blank" href="https://github.com/nvijaykarthik/firestrap">Firestrap</a></h5>
+                                    <div style={opnSrcIcoStl}>
+                                    <img class="card-img-top" src={pinakee} width="400" height="300" alt="Pinakee Transformar Xquery"></img>
+                                    </div>
+                                    <div class="card-body" style={opnSrcBodyHeight}>
+                                        <h5 class="card-title"><a target="_blank" rel="noopener noreferrer" href="https://github.com/nvijaykarthik/pinakee">Pinakee</a>   </h5>
+                                        <p class="card-text">Pinakee is a ReST based API for XML transformation using Xquery</p>
+                                        
+                                    </div>
+                                    <div class="card-footer">
+                                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/nvijaykarthik/pinakee" class="btn btn-primary float-right">View Details</a>
+                                </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-3 col-sm-6 mb-5">
+                                <div class="card u-box-shadow-lg">
+                                    <div style={opnSrcIcoStl}>
+                                    <img class="card-img-top"  src={firestrap}  width="400" alt="FireStrap"></img>
+                                    </div>
+                                    <div class="card-body" style={opnSrcBodyHeight}>
+                                        <h5 class="card-title"><a target="_blank" rel="noopener noreferrer" href="https://github.com/nvijaykarthik/firestrap">Firestrap</a></h5>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        
+                                    </div>
+                                    <div class="card-footer">
+                                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/nvijaykarthik/firestrap" class="btn btn-primary float-right">View Details</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6 mb-5">
                                 <div class="card u-box-shadow-lg">
-                                    <img class="card-img-top" src="https://jsblight.com/cdwd/wp-content/uploads/2015/01/About-1-400x550.jpg" alt="Card image cap"></img>
-                                    <div class="card-body">
-                                        <h5 class="card-title"><a target="_blank" href="https://github.com/nvijaykarthik/block-chain-electronic-voting-reference-implementation-using-javascript">Blector</a></h5>
+                                    <div style={opnSrcIcoStl}>
+                                    <img class="card-img-top" src={blector}  width="400" height="300" alt="Blector"></img>
+                                    </div>
+                                    <div class="card-body" style={opnSrcBodyHeight}>
+                                        <h5 class="card-title"><a target="_blank" rel="noopener noreferrer" href="https://github.com/nvijaykarthik/block-chain-electronic-voting-reference-implementation-using-javascript">Blector</a></h5>
                                         <p class="card-text">Electronic Voting using block chain (reference Implementation) in Javascript</p>
-                                        <a target="_blank" href="https://github.com/nvijaykarthik/block-chain-electronic-voting-reference-implementation-using-javascript" class="btn btn-primary">Go somewhere</a>
+                                        
+                                    </div>
+                                    <div class="card-footer">
+                                        <a target="_blank" rel="noopener noreferrer"  href="https://github.com/nvijaykarthik/block-chain-electronic-voting-reference-implementation-using-javascript" class="btn btn-primary float-right">View Details</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section class="bg-light u-content-space">
-                    <div class="container">
-                        <div class="row ">
-                            <div class="col-md-12">
-                                <header class="text-center w-md-50 mx-auto mb-8">
-                                    <h2 class="h1">Recent Blogs</h2>
-                                </header>
-                            </div>
-                        </div>
-
                     </div>
                 </section>
             </div>

@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import { Switch, Route, Link } from 'react-router-dom';
 import './App.css';
-import axios from 'axios';
 import Home  from './Component/Home';
 import BlogList from './Component/BlogList';
 import BlogPage from './Component/BlogPage';
