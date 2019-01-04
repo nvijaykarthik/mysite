@@ -22,13 +22,13 @@ class BlogList extends Component {
                                 let title=this.findAndReplace(date_title[1],"-"," ")
                                 let link='/blog/'+b.path
                                 return(
-                                    <div key={b.name}>
+                                    <div className="border-bottom" key={b.name}>
                                     <header className="mb-0">
-                                        <Link to={link}><h2 className="h1">{title}</h2></Link> 
+                                        <Link to={link}><h2 className="h2">{title}</h2></Link> 
                                         <p className="h5">{date_title[0]}</p>
                                     </header>
                                     <div>
-                                    
+                                        ......summary........
                                     </div>
                                      <Link to={link} className="btn btn btn-outline-primary">Read More...</Link>
                                     </div>
